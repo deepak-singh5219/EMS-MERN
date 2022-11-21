@@ -28,7 +28,12 @@ const employeeSchema = new mongoose.Schema({
     leaveApplication: [
       { type: mongoose.Schema.Types.ObjectId, ref: "LeaveApplication" }
     ],
-    
+    BloodGroup: { type: String },
+    EmergencyContactNo: { type: String },
+    Hobbies: { type: String },
+    PANcardNo: { type: String },
+    PermanetAddress: { type: String },
+    PresentAddress: { type: String }
  
 });
 
