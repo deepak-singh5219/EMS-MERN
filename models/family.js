@@ -6,9 +6,6 @@ var familyInfoSchema = new mongoose.Schema({
     DOB: { type: Date, required: true },
     Occupation: { type: String, required: true }
   });
-  familyInfoSchema.plugin(autoIncrement.plugin, {
-    model: "FamilyInfo",
-    field: "FamilyInfoID"
-  });
+  
   
 module.exports = mongoose.model("FamilyInfo", familyInfoSchema);

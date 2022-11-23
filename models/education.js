@@ -11,4 +11,4 @@ var educationSchema = new mongoose.Schema({
     field: "EducationID"
   });
 
-  module.exports = mongoose.model("Education", educationSchema);
+  module.exports = mongoose.model("Education", educationSchema,"EMS");
